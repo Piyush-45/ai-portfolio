@@ -2,6 +2,13 @@
 
 import { Github, Linkedin, Youtube } from "lucide-react"
 
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
+
+// export default function SocialLinks() {
+//   return (
+
+//   )
+// }
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white">
@@ -20,29 +27,14 @@ export default function Footer() {
 
         {/* Right: Social Icons */}
         <div className="flex gap-4 text-gray-600">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition"
-          >
-            <Github size={20} />
+          <a href="https://github.com/your-handle" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={22} />
           </a>
-          <a
-            href="https://linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition"
-          >
-            <Linkedin size={20} />
+          <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={22} />
           </a>
-          <a
-            href="https://youtube.com/yourchannel"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition"
-          >
-            <Youtube size={20} />
+          <a href="https://youtube.com/@your-handle" target="_blank" rel="noopener noreferrer">
+            <FaYoutube size={22} />
           </a>
         </div>
       </div>

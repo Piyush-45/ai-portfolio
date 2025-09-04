@@ -7,7 +7,7 @@ import ProjectCard from "@/components/project-card"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 import Image from "next/image"
-import Skills from "@/components/skillsSection"
+import Skills from "@/components/sections/skillsSection"
 
 export default function Hero() {
   const { scrollY } = useScroll()

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import ProjectCard from "@/components/project-card"
 import venuebotImg from "@/images/venuebot.png"
 import medicalReportImg from "@/images/medical1.png"
+import SectionHeading from "../SectionHeading"
 
 export default function Projects() {
   return (
@@ -12,23 +13,7 @@ export default function Projects() {
       className="max-w-6xl mx-auto px-6 py-20 scroll-mt-20"
     >
       {/* Section Title */}
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className=" relative text-3xl md:text-4xl font-bold text-center mb-16"
-      >
-        Selected Work
-        <svg
-          className="absolute left-1/2 -bottom-3 w-20 h-3 text-gray-300 transform -translate-x-1/2"
-          viewBox="0 0 100 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="2" />
-        </svg>
-      </motion.h2>
+      <SectionHeading>Selected Work</SectionHeading>
 
       {/* Grid with Staggered Animation */}
       <motion.div

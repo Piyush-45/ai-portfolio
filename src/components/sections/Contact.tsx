@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Youtube } from "lucide-react"
+import SectionHeading from "../SectionHeading"
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
 
 export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -33,24 +35,7 @@ export default function Contact() {
       className="max-w-3xl mx-auto px-6 py-20 scroll-mt-20"
     >
       {/* Section Title */}
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="relative text-3xl md:text-4xl font-bold text-center mb-6 inline-block"
-      >
-        Get in Touch
-        <svg
-          className="absolute left-1/2 -bottom-3 w-20 h-3 text-gray-300 transform -translate-x-1/2"
-          viewBox="0 0 100 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="2" />
-        </svg>
-      </motion.h2>
-
+      <SectionHeading>Get in Touch</SectionHeading>
       {/* Subtext */}
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -130,7 +115,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
         >
-          <Github size={24} />
+          <FaGithub size={22} />
         </a>
         <a
           href="https://linkedin.com/in/yourprofile"
@@ -138,7 +123,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
         >
-          <Linkedin size={24} />
+          <FaLinkedin size={22} />
         </a>
         <a
           href="https://youtube.com/yourchannel"
@@ -146,7 +131,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
         >
-          <Youtube size={24} />
+          <FaYoutube size={22} />
         </a>
       </motion.div>
     </section>
