@@ -29,7 +29,7 @@ export default function Projects() {
           description="AI app that analyzes lab reports and generates patient-friendly insights."
           image={medicalReportImg}
           liveLink="https://your-live-link.com"
-          githubLink="https://github.com/your-repo"
+          githubLink="https://github.com/Piyush-45/mrreport"
           tags={["AI", "Fullstack"]}
         />
 
@@ -38,9 +38,9 @@ export default function Projects() {
           year="2024"
           description="Conversational AI assistant for wedding venues, helping clients explore and book events."
           image={venuebotImg}
-          liveLink="https://your-live-link.com"
-          githubLink="https://github.com/your-repo"
-          tags={["Chatbot", "AI"]}
+          liveLink="https://advance-rag.vercel.app/admin"
+          githubLink="https://github.com/Piyush-45/advance-rag"
+          tags={["AI", "RAG", "Chatbot"]}
         />
 
         <ProjectCard
@@ -49,7 +49,7 @@ export default function Projects() {
           description="A new AI product I’m currently building. Stay tuned!"
           image=""
           comingSoon={true}
-          tags={["AI", "Experimental"]}
+          tags={["AI", "Experimental", "RAG"]}
         />
       </motion.div>
     </section>
