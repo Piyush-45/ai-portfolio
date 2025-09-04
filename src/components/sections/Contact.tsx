@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Github, Linkedin, Youtube } from "lucide-react"
 import SectionHeading from "../SectionHeading"
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
 
 export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -110,7 +110,7 @@ export default function Contact() {
         className="mt-12 flex justify-center gap-6"
       >
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Piyush-45"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
@@ -118,7 +118,7 @@ export default function Contact() {
           <FaGithub size={22} />
         </a>
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/piyushtyagidev/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
@@ -126,13 +126,23 @@ export default function Contact() {
           <FaLinkedin size={22} />
         </a>
         <a
-          href="https://youtube.com/yourchannel"
+          href="https://x.com/Piyush_ty"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-black transition"
+        >
+          <FaTwitter size={22} />
+        </a>
+        <a
+          href="https://www.youtube.com/@flowingFrontend03"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-black transition"
         >
           <FaYoutube size={22} />
         </a>
+
+
       </motion.div>
     </section>
   )

@@ -16,13 +16,11 @@ const page = () => {
   return (
     <>
       <Hero />
-      <Projects />
-      {/* <SkillsAndABout /> */}
       <AboutPolished />
+      <Projects />
       <SkillsSectionEnhanced />
       <Process />
       <Contact />
-
       <Footer />
     </>
   )

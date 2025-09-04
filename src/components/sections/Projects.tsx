@@ -47,7 +47,7 @@ export default function Projects() {
           title="⚡ Secret AI Project"
           year="2025"
           description="A new AI product I’m currently building. Stay tuned!"
-          image="/projects/secret-ai.png"
+          image=""
           comingSoon={true}
           tags={["AI", "Experimental"]}
         />

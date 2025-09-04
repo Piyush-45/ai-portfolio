@@ -1,0 +1,15 @@
+<!-- save as public/pt.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      /* Use system sans by default; for exact control convert to outlines */
+      .bg{fill:#0f172a;}           /* dark bg for white PT */
+      .txt{fill:#ffffff;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; font-weight:700; font-size:26px; letter-spacing:0.5px;}
+    </style>
+  </defs>
+
+  <!-- rounded square -->
+  <rect rx="12" ry="12" class="bg" width="64" height="64"/>
+  <!-- PT monogram -->
+  <text class="txt" x="50%" y="54%" text-anchor="middle" dominant-baseline="middle">PT</text>
+</svg>

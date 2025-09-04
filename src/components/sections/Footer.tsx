@@ -2,7 +2,7 @@
 
 import { Github, Linkedin, Youtube } from "lucide-react"
 
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
 
 // export default function SocialLinks() {
 //   return (
@@ -27,13 +27,36 @@ export default function Footer() {
 
         {/* Right: Social Icons */}
         <div className="flex gap-4 text-gray-600">
-          <a href="https://github.com/your-handle" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Piyush-45"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition"
+          >
             <FaGithub size={22} />
           </a>
-          <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/piyushtyagidev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition"
+          >
             <FaLinkedin size={22} />
           </a>
-          <a href="https://youtube.com/@your-handle" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/Piyush_ty"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition"
+          >
+            <FaTwitter size={22} />
+          </a>
+          <a
+            href="https://www.youtube.com/@flowingFrontend03"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition"
+          >
             <FaYoutube size={22} />
           </a>
         </div>
