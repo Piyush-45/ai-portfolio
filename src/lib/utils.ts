@@ -1,7 +1,11 @@
-// lib/utils.ts
+// src/lib/utils.ts
 import { clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 
-export function cn(...inputs: any[]) {
-  return twMerge(clsx(inputs))
+/**
+ * Merge Tailwind / className values safely.
+ * Accepts the same args as clsx.
+ */
+export function cn(...inputs: Parameters<typeof clsx>) {
+  return twMerge(clsx(...inputs))
 }
