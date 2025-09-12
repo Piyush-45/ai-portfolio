@@ -1,19 +1,26 @@
-import "./globals.css"
-import Navbar from "@/components/header"
+import "./globals.css";
+import Navbar from "@/components/header";
 
 export const metadata = {
   title: "Piyush — AI Engineer & Product Builder",
   description: "I build AI-powered apps and chatbots. Clean design × strong engineering.",
   keywords: ["Piyush", "AI engineer", "product builder", "RAG", "LangChain", "Next.js"],
-  authors: [{ name: "Piyush", url: "https://your-site.com" }],
+  authors: [{ name: "Piyush", url: "https://piyush.live" }],
+
+  icons: {
+    icon: "/favicon.png",              // favicon (16x16 or 32x32 PNG works fine)
+    apple: "/apple-touch-icon.png",    // optional (for iOS homescreen)
+    shortcut: "/favicon.png",          // fallback for some browsers
+  },
+
   openGraph: {
     title: "Piyush — AI Engineer & Product Builder",
     description: "I build AI-powered apps and chatbots. Clean design × strong engineering.",
-    url: "https://your-site.com",
-    siteName: "Piyush",
+    url: "https://piyush.live",
+    siteName: "Piyush Tyagi",
     images: [
       {
-        url: "../images/profilepic1.png",
+        url: "/profilepic.png",        // ✅ use `/` (not ../images) because files in `public/`
         width: 1200,
         height: 630,
         alt: "Piyush — AI Engineer",
@@ -22,16 +29,12 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Piyush — AI Engineer & Product Builder",
     description: "I build AI-powered apps and chatbots. Clean design × strong engineering.",
-    images: ["../images/profilepic1.png"],
-  },
-  icons: {
-    icon: "/pt.svg",          // favicon fallback (used by many browsers)
-    shortcut: "/pt.svg",
-    apple: "/apple-touch-icon.png", // optional iOS touch icon
+    images: ["/profilepic.png"], // ✅ add correct twitter image
   },
 };
 
@@ -43,5 +46,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-  )
+  );
 }
