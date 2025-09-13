@@ -22,9 +22,9 @@
 //         {/* Parallax Grid Background */}
 //         <motion.div
 //           style={{ y }}
-//           className="absolute inset-0 -z-10 
-//           bg-white 
-//           bg-[linear-gradient(to_right,#f3f3f3_1px,transparent_1px),linear-gradient(to_bottom,#f3f3f3_1px,transparent_1px)] 
+//           className="absolute inset-0 -z-10
+//           bg-white
+//           bg-[linear-gradient(to_right,#f3f3f3_1px,transparent_1px),linear-gradient(to_bottom,#f3f3f3_1px,transparent_1px)]
 //           bg-[size:40px_40px]
 //           [mask-image:radial-gradient(circle_at_center,black_70%,transparent_100%)]
 //           [mask-repeat:no-repeat]
@@ -127,7 +127,8 @@ export default function HeroEnhanced() {
         {/* Hey, I’m Piyush — your new favorite */}
         Hey, I’m Piyush
         <br />
-        <span className="text-gray-600">AI Engineer × Product Builder.</span>
+        <span className="text-gray-600">Clean design × strong engineering × AI magic.</span>
+        {/* <span className="text-gray-600">AI Engineer × Product Builder.</span> */}
       </motion.h1>
 
       {/* Subtext */}
@@ -207,12 +208,12 @@ function WordCloud() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-0 -z-10 select-none opacity-[0.06]"
+      className="pointer-events-none absolute inset-0 -z-1 select-none opacity-[0.06]"
     >
       {words.map((w, i) => (
         <div
           key={i}
-          className={`absolute font-extrabold tracking-tight text-gray-900 animate-pulse ${w.s}`}
+          className={`absolute font-extrabold tracking-tight text-gray-950  animate-pulse ${w.s}`}
           style={{
             left: w.x,
             top: w.y,
